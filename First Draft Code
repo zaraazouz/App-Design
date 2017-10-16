@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--My second page is under the "send message" link. The rest just have simple text. By the way, the links are in pink/red, so you know what to click and what not to click.-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pen Pal+ App Design</title>
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+        <style>
+            body {
+                background-color: rgb(0, 7, 99);
+                font-family: "Josefin Sans", sans-serif;
+                color: rgb(17, 234, 245);
+            }
+            #heading {
+                background-color: rgb(0, 7, 99);
+                font-family: "Amatic SC", serif;
+                position: absolute;
+                right: 20px;
+                font-size: 4em;
+                top: -9%;
+            }
+            .white {
+                color: white;
+            }
+            a {
+                color: rgb(245, 14, 91);
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            #add-div {
+                position: absolute;
+                padding: 10px;
+                right: 2%;
+                top: 20%;
+            }
+            #box-div {
+                border: rgb(17, 234, 245) 2px dashed;
+                padding: 5px;
+                padding-top: 7px;
+            }
+            #contact-div {
+                position: absolute;
+                width: 50%;
+                left: 25%;
+                top: 22%;
+            }
+            #notification-div {
+                position: absolute;
+                width: 50%;
+                left: 25%;
+                top: 62%;
+            }
+            .white-span {
+                padding-left: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="heading">Pen Pal+</h1>
+            
+            <!--Side Menu-->
+            <h3 class="white" id="Name">Suzie Smith</h3>
+            <a id="profile">Profile</a><br>
+            <a id="language">Change Language</a><br>
+            <a id="change">Change Pen Pal</a><br>
+            <a id="help">Help</a><br>
+            <a id="settings">Settings</a><br>
+            <a id="log-out">Log out</a>
+            
+            <!--Adding Language/Pen Pal-->
+            <div id="add-div">
+            <a id="add-lang">ADD</a><span class="white"> another language</span>
+            <br>
+            <a id="add-penpal">ADD</a><span class="white"> another Pen Pal</span>
+            </div>
+            
+            <!--Contact Pen Pal-->
+            <div id="contact-div">
+                <h3 id="contact-h3" class="white">Contact Antoinette</h3>
+                <div id="box-div">
+                    <a id="send">SEND</a><span class="white"> Antoinette a message</span><br>
+                    <a id="call">CALL</a><span class="white"> Antoinette (It's 4:30 P.M. in France)</span><br>
+                    <a id="view-contact">VIEW</a><span class="white"> all of your messages</span>
+                </div>
+                </div>
+                
+                <!--Notifications-->
+                <div id="notification-div">
+                <h2>Notifications</h2>
+                <p>ANTOINETTE responded to your message: "Salut Suzie! Hello ..."</p>
+                <a id="view-notifications">VIEW</a>
+                <span class="white-span"></span>
+                <a id="ignore">IGNORE</a>
+                <span class="white-span"></span>
+                <a id="delete">DELETE</a>
+                </div>
+            </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            var container = $("#container");
+        
+            /**USELESS LINKS**/
+            //profile page
+            $("#profile").on("click", function() {
+                container.html("<p>Profile page</p>");
+            });
+            
+            //change language page
+            $("#language").on("click", function() {
+                container.html("<p>Change Language page</p>");
+            });
+            
+            //change pen pal page
+            $("#change").on("click", function() {
+                container.html("<p>Change Pen Pal page <p>");
+            });
+            
+            //help page
+            $("#help").on("click", function() {
+                container.html("<p>Help page (Maybe redirect to a different webpage)<p>");
+            });
+            
+            //settings page
+            $("#settings").on("click", function() {
+                container.html("<p>Settings page<p>");
+            });
+            
+            //log out page
+            $("#log-out").on("click", function() {
+                container.html("<p>Log out page<p>");
+            });
+            
+            //add language page
+            $("#add-lang").on("click", function() {
+                container.html("<p>Add another language page</p>");
+            });
+            
+            //add Pen Pal page
+            $("#add-penpal").on("click", function() {
+                container.html("<p>Add another Pen Pal page</p>");
+            });
+        </script>
+    </body>
+</html>
