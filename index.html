@@ -161,6 +161,32 @@
             $("#view-contact").on("click", function() {
                 container.html("<p>View messages page</p>");
             });
+            
+            //view new message under notifications page
+            $("#view-notifications").on("click", function() {
+                container.html("<p>View message page<p>");
+            });
+            
+            //ignore message page
+            $("#ignore").on("click", function() {
+                container.html("<p>Ignore message page</p>");
+            });
+            
+            //delete message page
+            $("#delete").on("click", function() {
+                
+            /**ACTUAL LINK**/
+            //Contact page
+            $("#contact-h3").on("click", function() {
+                container.html("<div id="contact-div">
+                <h3 id="contact-h3" class="white">Contact Antoinette</h3>
+                <div id="box-div">
+                    <a id="send">SEND</a><span class="white"> Antoinette a message</span><br>
+                    <a id="call">CALL</a><span class="white"> Antoinette (It's 4:30 P.M. in France)</span><br>
+                    <a id="view-contact">VIEW</a><span class="white"> all of your messages</span>
+                </div>
+                </div>");
+                });
         </script>
     </body>
 </html>
