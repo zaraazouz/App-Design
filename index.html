@@ -21,7 +21,7 @@
                 font-family: "Amatic SC", serif;
                 position: absolute;
                 right: 20px;
-                font-size: 4em;
+                font-size: 3em;
                 top: -9%;
             }
             .white {
@@ -145,6 +145,21 @@
             //add Pen Pal page
             $("#add-penpal").on("click", function() {
                 container.html("<p>Add another Pen Pal page</p>");
+            });
+            
+            //send message page
+            $("#send").on("click", function() {
+                container.html("<p>Send a message page</p>");
+            });
+            
+            //call page
+            $("#call").on("click", function() {
+                container.html("<p>Call page</p>");
+            });
+            
+            //view messages page
+            $("#view-contact").on("click", function() {
+                container.html("<p>View messages page</p>");
             });
         </script>
     </body>
